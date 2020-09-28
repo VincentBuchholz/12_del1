@@ -17,9 +17,12 @@ public class Main {
         //Laver to "terninger"
         Random rand = new Random();
 
-        int die1, die2, sum;
+        int die1, die2, sum, x, y;
         die1 = 0;
         die2 = 0;
+        sum = die1 + die2;
+        x=0;
+        y=0;
 
         //System.out.print(terning1 + " " + terning2 + " " + sum);
         int oldScorePlayer1, oldScorePlayer2, newScoreplayer1, newScorePlayer2;
@@ -53,6 +56,20 @@ public class Main {
                         System.out.println("Die 2: " + die2);
                         System.out.println("Score: " + newScoreplayer1);
                     }
+                    if (die1 == 6 && die2 == 6) {
+                        x ++;
+
+
+                    } else {
+                        x = 0;
+                    }
+                    if (x == 2) {
+                        System.out.println("you rolled a double 6 twice in a row!");
+                        break;
+                    }
+
+
+
                     if (die1 == die2) {
                         System.out.println("you rolled the same number and get another turn");
                     }
@@ -89,6 +106,18 @@ public class Main {
                         System.out.println("Die 2: " + die2);
                         System.out.println("Score: " + newScorePlayer2);
                     }
+                    if (die1 == 6 && die2 == 6) {
+                        y++;
+
+
+                    } else {
+                        y = 0;
+                    }
+                    if (y == 2) {
+                        System.out.println("you rolled a double 6 twice in a row!");
+                        break;
+                    }
+
                     if (die1 == die2) {
                         System.out.println("you rolled the same number and get another turn");
                     }
