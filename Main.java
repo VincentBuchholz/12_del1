@@ -26,7 +26,7 @@ public class Main {
         oldScorePlayer1 = 0;
         oldScorePlayer2 = 0;
 
-
+        //hej
         //Her er selve spillet
         while (true) {
 
