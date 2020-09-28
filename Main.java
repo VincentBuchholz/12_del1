@@ -70,17 +70,20 @@ public class Main {
 
 
 
-                    if (die1 == die2) {
+                    if (die1 == die2 && oldScorePlayer1 < 40) {
                         System.out.println("You rolled the same number and get another turn");
                     }
 
 
                 }
-            } while (die1 == die2) ;
+            } while (die1 == die2 && oldScorePlayer1 < 40) ;
 
-            if (oldScorePlayer1 >= 40) {
+            if (oldScorePlayer1 >= 40 && die1 == die2) {
                 System.out.print("Congratulations " + playerOne + " you win");
                 break;
+            }
+            if (oldScorePlayer1 >= 40 && die1 != die2) {
+                System.out.println("Your score is over 40, but you need to roll the same numer to win!");
             }
             if (x == 2) {
                 System.out.print("Congratulations " + playerOne + " you win");
@@ -123,27 +126,32 @@ public class Main {
                         break;
                     }
 
-                    if (die1 == die2) {
+                    if (die1 == die2 && oldScorePlayer2 < 40) {
                         System.out.println("You rolled the same number and get another turn");
                     }
 
                 }
-            } while (die1 == die2);
+            } while (die1 == die2 && oldScorePlayer2 < 40 );
 
 
-            if (oldScorePlayer2 >= 40) {
+            if (oldScorePlayer2 >= 40 && die1 == die2) {
                 System.out.print("Congratulations " + playerTwo + " you win");
                 break;
             }
+
+        if (oldScorePlayer2 >= 40 && die1 != die2) {
+            System.out.println("Your score is over 40, but you need to roll the same numer to win!");
+        }
+
         if (y == 2) {
             System.out.print("Congratulations " + playerTwo + " you win");
             break;
         }
 
         }
-
     }
-}
+    }
+
 
 
 
