@@ -74,7 +74,7 @@ public class Main {
                         System.out.println("You rolled the same number and get another turn");
                     }
                     if (die1 == die2 && die1==6) {
-                        System.out.println("you rolled two 6's and if u do it again you win the game");
+                        System.out.println("You rolled two 6's and if u do it again you win the game");
                     }
 
                 }
@@ -85,7 +85,7 @@ public class Main {
                 break;
             }
             if (x == 2) {
-                System.out.print("congratulations " + playerOne + " you win");
+                System.out.print("Congratulations " + playerOne + " you win");
                 break;
             }
 
@@ -138,7 +138,7 @@ public class Main {
                 break;
             }
         if (y == 2) {
-            System.out.print("congratulations " + playerTwo + " you win");
+            System.out.print("Congratulations " + playerTwo + " you win");
             break;
         }
 
