@@ -137,7 +137,7 @@ public class Main {
                 System.out.print("congratulations " + playerTwo + " you win");
                 break;
             }
-        }if (y == 2) {
+        if (y == 2) {
             System.out.print("congratulations " + playerTwo + " you win");
             break;
         }
@@ -146,5 +146,7 @@ public class Main {
 
     }
 }
+
+
 
                                                                                                                      
