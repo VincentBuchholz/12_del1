@@ -38,8 +38,8 @@ public class Main {
                 String roll1 = input.next();
 
                 if (roll1.contentEquals("roll")) {
-                    die1 = rand.nextInt(6) + 1;
-                    die2 = rand.nextInt(6) + 1;
+                    die1 = rand.nextInt(1) + 6;
+                    die2 = rand.nextInt(1) + 6;
 
 
                     if (die1 == 1 && die2 == 1) {
@@ -73,9 +73,7 @@ public class Main {
                     if (die1 == die2) {
                         System.out.println("You rolled the same number and get another turn");
                     }
-                    if (die1 == die2 && die1==6) {
-                        System.out.println("You rolled two 6's and if u do it again you win the game");
-                    }
+
 
                 }
             } while (die1 == die2) ;
