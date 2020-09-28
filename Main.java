@@ -34,7 +34,7 @@ public class Main {
         while (true) {
 
             do {
-                System.out.print(playerOne + " it's your turn, type roll to roll the dice: ");
+                System.out.print(playerOne + " It's your turn, type roll to roll the dice: ");
                 String roll1 = input.next();
 
                 if (roll1.contentEquals("roll")) {
@@ -64,14 +64,14 @@ public class Main {
                         x = 0;
                     }
                     if (x == 2) {
-                        System.out.println("you rolled a double 6 twice in a row!");
+                        System.out.println("You rolled a double 6 twice in a row!");
                         break;
                     }
 
 
 
                     if (die1 == die2) {
-                        System.out.println("you rolled the same number and get another turn");
+                        System.out.println("You rolled the same number and get another turn");
                     }
                     if (die1 == die2 && die1==6) {
                         System.out.println("you rolled two 6's and if u do it again you win the game");
@@ -81,7 +81,7 @@ public class Main {
             } while (die1 == die2) ;
 
             if (oldScorePlayer1 >= 40) {
-                System.out.print("congratulations " + playerOne + " you win");
+                System.out.print("Congratulations " + playerOne + " you win");
                 break;
             }
             if (x == 2) {
@@ -91,7 +91,7 @@ public class Main {
 
 
             do {
-                System.out.print(playerTwo + " it's your turn, type roll to roll the dice: ");
+                System.out.print(playerTwo + " It's your turn, type roll to roll the dice: ");
                 String roll2 = input.next();
 
                 if (roll2.contentEquals("roll")) {
@@ -121,12 +121,12 @@ public class Main {
                         y = 0;
                     }
                     if (y == 2) {
-                        System.out.println("you rolled a double 6 twice in a row!");
+                        System.out.println("You rolled a double 6 twice in a row!");
                         break;
                     }
 
                     if (die1 == die2) {
-                        System.out.println("you rolled the same number and get another turn");
+                        System.out.println("You rolled the same number and get another turn");
                     }
 
                 }
@@ -134,7 +134,7 @@ public class Main {
 
 
             if (oldScorePlayer2 >= 40) {
-                System.out.print("congratulations " + playerTwo + " you win");
+                System.out.print("Congratulations " + playerTwo + " you win");
                 break;
             }
         if (y == 2) {
