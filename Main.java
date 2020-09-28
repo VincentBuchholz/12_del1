@@ -35,7 +35,7 @@ public class Main {
                 System.out.print(playerOne + " it's your turn, type roll to roll the dice: ");
                 String roll1 = input.next();
                 if (roll1.contentEquals(""));
-                    System.out.println("Type roll!");
+                    System.out.println("Error, type roll!");
 
 
                 if (roll1.contentEquals("roll")) {
