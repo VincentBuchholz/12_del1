@@ -73,11 +73,18 @@ public class Main {
                     if (die1 == die2) {
                         System.out.println("you rolled the same number and get another turn");
                     }
+                    if (die1 == die2 && die1==6) {
+                        System.out.println("you rolled two 6's and if u do it again you win the game");
+                    }
 
                 }
             } while (die1 == die2) ;
 
             if (oldScorePlayer1 >= 40) {
+                System.out.print("congratulations " + playerOne + " you win");
+                break;
+            }
+            if (x == 2) {
                 System.out.print("congratulations " + playerOne + " you win");
                 break;
             }
@@ -130,6 +137,10 @@ public class Main {
                 System.out.print("congratulations " + playerTwo + " you win");
                 break;
             }
+        } if (y == 2) {
+            System.out.print("congratulations " + playerTwo + " you win");
+            break;
+        }
 
         }
 
