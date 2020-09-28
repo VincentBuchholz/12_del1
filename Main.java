@@ -18,6 +18,8 @@ public class Main {
         Random rand = new Random();
 
         int die1, die2, sum;
+        die1 = 0;
+        die2 = 0;
 
         //System.out.print(terning1 + " " + terning2 + " " + sum);
         int oldScorePlayer1, oldScorePlayer2, newScoreplayer1, newScorePlayer2;
