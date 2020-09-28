@@ -29,7 +29,7 @@ public class Main {
         oldScorePlayer1 = 0;
         oldScorePlayer2 = 0;
 
-        //hej
+
         //Her er selve spillet
         while (true) {
 
@@ -137,7 +137,7 @@ public class Main {
                 System.out.print("congratulations " + playerTwo + " you win");
                 break;
             }
-        } if (y == 2) {
+        }if (y == 2) {
             System.out.print("congratulations " + playerTwo + " you win");
             break;
         }
