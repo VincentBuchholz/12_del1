@@ -1,4 +1,5 @@
 package com.company;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.Random;
 public class Main {
@@ -33,6 +34,9 @@ public class Main {
             do {
                 System.out.print(playerOne + " it's your turn, type roll to roll the dice: ");
                 String roll1 = input.next();
+                if (roll1.contentEquals(""));
+                    System.out.println("Type roll!");
+
 
                 if (roll1.contentEquals("roll")) {
                     die1 = rand.nextInt(6) + 1;
