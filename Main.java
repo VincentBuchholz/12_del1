@@ -4,6 +4,10 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
+
+        // Velkommen
+        System.out.println("Welcome to the Dice Game! Achieve 40 score & then roll a pair to win.");
+
         // Henter spillernes navne
         Scanner input = new Scanner(System.in);
         String playerOne, playerTwo;
@@ -33,6 +37,7 @@ public class Main {
         //Her er selve spillet
         while (true) {
 
+            // Player 1
             do {
                 System.out.print(playerOne + " It's your turn, type roll to roll the dice: ");
                 String roll1 = input.next();
@@ -47,7 +52,7 @@ public class Main {
                         newScoreplayer1 = 0;
                         System.out.println("Die 1: " + die1);
                         System.out.println("Die 2: " + die2);
-                        System.out.println("You rolled two one's, your score is now: 0");
+                        System.out.println("You rolled a pair of one's, your score is now: 0");
 
                     } else {
                         newScoreplayer1 = oldScorePlayer1 + die1 + die2;
@@ -64,14 +69,14 @@ public class Main {
                         x = 0;
                     }
                     if (x == 2) {
-                        System.out.println("You rolled a double 6 twice in a row!");
+                        System.out.println("You rolled a pair of 6's twice in a row!");
                         break;
                     }
 
 
 
                     if (die1 == die2 && oldScorePlayer1 < 40) {
-                        System.out.println("You rolled the same number and get another turn");
+                        System.out.println("You rolled a pair, you get another turn!");
                     }
 
 
@@ -83,7 +88,7 @@ public class Main {
                 break;
             }
             if (oldScorePlayer1 >= 40 && die1 != die2) {
-                System.out.println("Your score is over 40, but you need to roll the same numer to win!");
+                System.out.println("Your score is over 40, but you need to roll a pair to win!");
             }
             if (x == 2) {
                 System.out.print("Congratulations " + playerOne + " you win");
@@ -91,6 +96,7 @@ public class Main {
             }
 
 
+            // Player 2
             do {
                 System.out.print(playerTwo + " It's your turn, type roll to roll the dice: ");
                 String roll2 = input.next();
@@ -105,7 +111,7 @@ public class Main {
                         newScorePlayer2 = 0;
                         System.out.println("Die 1: " + die1);
                         System.out.println("Die 2: " + die2);
-                        System.out.println("You rolled two one's, your score is now: 0");
+                        System.out.println("You rolled a pair of one's, your score is now: 0");
 
                     } else {
                         newScorePlayer2 = oldScorePlayer2 + die1 + die2;
@@ -122,12 +128,12 @@ public class Main {
                         y = 0;
                     }
                     if (y == 2) {
-                        System.out.println("You rolled a double 6 twice in a row!");
+                        System.out.println("You rolled a pair of 6's twice in a row!");
                         break;
                     }
 
                     if (die1 == die2 && oldScorePlayer2 < 40) {
-                        System.out.println("You rolled the same number and get another turn");
+                        System.out.println("You rolled a pair, you get another turn!");
                     }
 
                 }
@@ -140,7 +146,7 @@ public class Main {
             }
 
         if (oldScorePlayer2 >= 40 && die1 != die2) {
-            System.out.println("Your score is over 40, but you need to roll the same numer to win!");
+            System.out.println("Your score is over 40, but you need to roll a pair to win!");
         }
 
         if (y == 2) {
